@@ -6,7 +6,7 @@ Questa è una guida di migrazione dal template [Laravel Template](https://github
 
 Scarica questa cartella sul tuo computer
 
-immagine
+![App Screenshot](./assets/download-repo.png)
 
 e unzippa 🤐
 
