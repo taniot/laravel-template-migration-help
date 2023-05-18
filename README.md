@@ -1,6 +1,6 @@
 ## Laravel template - Default to Auth Migration
 
-Questa è una guida di migrazione dal template [Laravel Template](https://github.com/taniot/laravel-template) al template [Laravel Auth Template](https://github.com/taniot/laravel-auth-template) per integrare il sistema di autenticazione di Laravel in un nostro progetto esistente.
+Questa è una guida di migrazione dal template [Laravel Template](https://github.com/taniot/laravel-template) al template [Laravel Auth Template](https://github.com/taniot/laravel-auth-template) per integrare il sistema di autenticazione di Laravel in un progetto esistente.
 
 ### 🗂 Fase 0 - Download di questa repo
 
@@ -8,9 +8,19 @@ Scarica questa cartella sul tuo computer
 
 ![App Screenshot](./assets/download-repo.png)
 
-e unzippa 🤐
+e 🤐 unzippa. Da questa cartella prenderemo i files che ci servono per utilizzare le funzionalità di autenticazione nostro progetto.
 
-### 🏁 Fase 1 - Installazione e configurazione progetto
+### 🏁 Fase 1 - Installazione e configurazione progetto da migrare
+
+- Apriamo in VSCode il progetto che vogliamo aggiornare.
+- Creiamo un nuovo branch di sviluppo e spostiamoci sul nuovo branch
+
+```bash
+git branch feat/auth-features
+git checkout feat/auth-features
+```
+
+- Iniziamo l'installazione
 
 ```bash
 composer install
@@ -21,7 +31,9 @@ php artisan key:generate
 # proseguire con la migration
 php artisan migrate
 ```
-#### Seeder (se presenti)
+
+- Lanciamo i Seeder - *se presenti*
+
 ```bash
 php artisan db:seed --class=SEEDERNAME
 ```
